@@ -1,33 +1,46 @@
 <style type="text/css">
 div.contain
 {
-  border-bottom: 1px solid blue;
+  border-bottom: 1px dashed gray ;
   height: 35px;
-  width: 650px;
+  width: 860px;
   float: center;
-  border-style:dashed;
+  
 }
 div.contain div
 {
   float: left;
   diplay:inline;
-  width:82px;
-  height:25px;
+  width:180px;
+  height:28px;
   padding: 4px;
   margin: auto;
-  border-right:1px solid green;
-  border-left:1px solid green;
-  background-color:#fffff7;
-  
+  border-right:1px solid gray;
+  border-left:1px solid gray;
+}
+div.contain div.pos
+{
+  width:40px;
+}
+div.contain div.dat
+{
+  width:90px;
+}
+div.contain div.typ
+{
+  width:160px;
+}
+div.contain div.loc
+{
+  width:150px;
 }
 </style>
 
 <div class="contain">
-    <div class="result-datum">{@datum}</div>
-    <div class="result-locatie">{@plaats}</div>
-    <div class="result-type">{@type}</div>
-    <div class="result-naam">{@naam}</div>
-    <div class="result-categorie">{@categorie}</div>
-    <div class="result-resultaat">{@resultaat}/{@deelnemers}</div>
-    <div class="result-tijd">{@tijd}</div>
+    <div class="dat">{@datum}</div>
+    <div class="loc">{@plaats}</div>
+    <div class="typ">{@type}</div>
+    <div>{@naam}</div>
+    <div>{@categorie}</div>
+    <div class="pos">{@resultaat}</div>
 </div>
